@@ -8,3 +8,24 @@ soong_namespace {
 	],
 }
 
+install_symlink {
+	name: "bdwlan_bdwlan_symlink",
+	soc_specific: true,
+	installed_location: "firmware/qca6390/bdwlan.e16",
+	symlink_target: "/vendor/etc/wifi/bdwlan.e16",
+}
+
+install_symlink {
+	name: "bdwlan_bdwlan_symlink_1",
+	soc_specific: true,
+	installed_location: "firmware/qca6390/bdwlan.e17",
+	symlink_target: "/vendor/etc/wifi/bdwlan.e17",
+}
+
+install_symlink {
+	name: "bdwlan_bdwlan_symlink_2",
+	soc_specific: true,
+	installed_location: "firmware/qca6390/bdwlan.elf",
+	symlink_target: "/vendor/etc/wifi/bdwlan.elf",
+}
+
