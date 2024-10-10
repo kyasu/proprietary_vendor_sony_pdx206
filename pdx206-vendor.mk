@@ -679,8 +679,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx206/proprietary/vendor/firmware/tzsecuredata.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/tzsecuredata.mdt \
     vendor/sony/pdx206/proprietary/vendor/lib64/camera/com.sony.sensormodule.cervin_imx363.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.cervin_imx363.bin \
     vendor/sony/pdx206/proprietary/vendor/lib64/camera/com.sony.sensormodule.cervin_imx557.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.cervin_imx557.bin \
-    vendor/sony/pdx206/proprietary/vendor/lib64/camera/com.sony.sensormodule.cervin_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.cervin_s5k3t2.bin \
-    vendor/sony/pdx206/proprietary/vendor/lib64/libsomc_thermal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomc_thermal.so
+    vendor/sony/pdx206/proprietary/vendor/lib64/camera/com.sony.sensormodule.cervin_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.cervin_s5k3t2.bin
 
 PRODUCT_PACKAGES += \
     bdwlan_bdwlan_symlink \
