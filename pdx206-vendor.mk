@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/sony/pdx206/proprietary/vendor/etc/change.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/change.cfg \
     vendor/sony/pdx206/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/sony/pdx206/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/sony/pdx206/proprietary/vendor/camera/CERVIN_0_EEPROM_FW_DATA_1_0x16631040.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CERVIN_0_EEPROM_FW_DATA_1_0x16631040.dat \
     vendor/sony/pdx206/proprietary/vendor/camera/CERVIN_0_EEPROM_FW_DATA_1_0x16632000.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CERVIN_0_EEPROM_FW_DATA_1_0x16632000.dat \
     vendor/sony/pdx206/proprietary/vendor/camera/CERVIN_0_EEPROM_FW_DATA_2_0x16631040.dat:$(TARGET_COPY_OUT_VENDOR)/camera/CERVIN_0_EEPROM_FW_DATA_2_0x16631040.dat \
@@ -680,6 +679,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx206/proprietary/vendor/lib64/camera/com.sony.sensormodule.cervin_imx363.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.cervin_imx363.bin \
     vendor/sony/pdx206/proprietary/vendor/lib64/camera/com.sony.sensormodule.cervin_imx557.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.cervin_imx557.bin \
     vendor/sony/pdx206/proprietary/vendor/lib64/camera/com.sony.sensormodule.cervin_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.sony.sensormodule.cervin_s5k3t2.bin
+
+PRODUCT_PACKAGES += \
+    cnss-daemon
 
 PRODUCT_PACKAGES += \
     bdwlan_bdwlan_symlink \

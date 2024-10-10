@@ -5,7 +5,31 @@
 soong_namespace {
 	imports: [
 		"vendor/sony/sm8250-common",
+        "hardware/qcom-caf/sm8250",
+        "hardware/qcom-caf/wlan",
+        "hardware/sony",
+        "vendor/qcom/opensource/commonsys/display",
+        "vendor/qcom/opensource/commonsys-intf/display",
+        "vendor/qcom/opensource/dataservices",
+        "vendor/qcom/opensource/display",
 	],
+}
+
+cc_prebuilt_binary {
+	name: "cnss-daemon",
+	owner: "sony",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/cnss-daemon"],
+			shared_libs: ["libcutils", "liblog", "libqmi_cci", "libqmi_common_so", "libnl", "libcld80211", "libperipheral_client", "libmdmdetect", "libqmiservices", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
 }
 
 install_symlink {
